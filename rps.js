@@ -35,7 +35,21 @@ function playRound(playerSelection, computerSelection){
     }
 }
 
+//main game engine. Loops 5 times
+function game(){
 
-const playerSelection = "rock";
-const computerSelection = getComputerChoice();
-console.log(playRound(playerSelection, computerSelection));
+    for (let i = 0; i < 5; i++){
+        let playerSelection = window.prompt("Enter your choice:");
+        console.log(playRound(playerSelection, getComputerChoice()));
+        
+    }
+    console.log("Game's over. Gotta reload the page kid. ")
+
+}
+
+game();
+
+
+//const playerSelection = "rock";
+//const computerSelection = getComputerChoice();
+//console.log(playRound(playerSelection, computerSelection));
